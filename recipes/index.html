@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <title>Recept - Recipes</title>
+        <link href="/assets/css/mermaid.css" rel="stylesheet">
+        <link href="/assets/css/highlight.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/override.css" rel="stylesheet" />
+        <script src="/assets/js/turbolinks.js"></script>
+        <script src="/assets/js/jQuery-2.2.3.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>        
+        <script src="/assets/js/app.min.js"></script>         
+        <script src="/assets/js/highlight.pack.js"></script>   
+        <script src="/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/assets/js/mermaid.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.min.js"></script>
+        <script src="/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><img src="/assets/img/logo.png"></span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="/assets/img/logo.png"></span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li class="active"><a href="/recipes">Recipes</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"></div>
+
+                </section>
+                <section class="sidebar">                    
+                    
+
+                    <ul class="sidebar-menu">
+                        
+            <li class="header">Br&#xF6;d</li>
+                <li><a href="/recipes/annes-philadephiaostfyllda-hallonmuffins">Annes philadephiaostfyllda hallonmuffins</a></li>
+                <li><a href="/recipes/eriks-smoriga-bullar">Eriks sm&#xF6;riga bullar</a></li>
+                <li><a href="/recipes/focaccia">Focaccia</a></li>
+                <li><a href="/recipes/hurtbulle">Hurtbulle</a></li>
+                <li><a href="/recipes/johans-frukostbrod-till-alsklingen">Johans frukostbr&#xF6;d till &#xE4;lsklingen</a></li>
+                <li><a href="/recipes/ljust-sommarbrod-med-vete">Ljust sommarbr&#xF6;d m. vete</a></li>
+                <li><a href="/recipes/mamma-gunnels-p%C3%B6siga-sockerkaka">Mammas saftiga p&#xF6;siga sockerkaka med frukt</a></li>
+                <li><a href="/recipes/martins-en-bra-bulle">Martins En bra bulle</a></li>
+                <li><a href="/recipes/pain-de-martins-pizzadeg">Pain de Martins pizzadeg (tar ca 4 h)</a></li>
+                <li><a href="/recipes/pizzadeg">Pizzadeg</a></li>
+                <li><a href="/recipes/restaurangakademiens-brod">Restaurangakademiensbr&#xF6;d</a></li>
+                <li><a href="/recipes/enkla-ljusa-brodet">Vila och vika Enkla ljusa br&#xF6;det</a></li>
+            <li class="header">Dessert</li>
+                <li><a href="/recipes/kladdkaka">Kladdkaka</a></li>
+                <li><a href="/recipes/knackig-rabarberpaj">Kn&#xE4;ckig rabarberpaj (eller n&#xE5;t b&#xE4;r)</a></li>
+                <li><a href="/recipes/leilas-sega-kladdkaka">Leilas sega kladdkaka</a></li>
+                <li><a href="/recipes/mamma-gunnels-tartbotten">Mamma Gunnels t&#xE5;rtbotten</a></li>
+                <li><a href="/recipes/mormor-gunvors-succet%C3%A5rta">Mormors Gunvors succ&#xE9;t&#xE5;rta</a></li>
+                <li><a href="/recipes/rarorda-bar">R&#xE5;r&#xF6;rda b&#xE4;r</a></li>
+                <li><a href="/recipes/leilas-sega-maranger">Sega mar&#xE4;nger &#xE0; la Leila Lindholm</a></li>
+                <li><a href="/recipes/vit-chokladmousse">Vit chokladmousse m marinerade hjortron</a></li>
+                <li><a href="/recipes/vit-chokladpanacotta-med-bar">Vit chokladpannacotta med limemarinerade b&#xE4;r</a></li>
+            <li class="header">Frukost</li>
+                <li><a href="/recipes/american-pancaces">American pancakes</a></li>
+                <li><a href="/recipes/gunlogs-musli-fran-facebook">Gunl&#xF6;gs m&#xFC;sli fr&#xE5;n Facebook</a></li>
+            <li class="header">Godis</li>
+                <li><a href="/recipes/knack">Kn&#xE4;ck</a></li>
+            <li class="header">Indiskt</li>
+                <li><a href="/recipes/aloo-masala-for-dosai">Aloo (Potato) Masala for Dosa</a></li>
+                <li><a href="/recipes/anjums-green-coconut-fish-curry">Anjum&#x27;s green coconut fish curry</a></li>
+                <li><a href="/recipes/rogan-josh">Atul Kochhar&#x27;s Rogan Josh</a></li>
+                <li><a href="/recipes/chai">Chai</a></li>
+                <li><a href="/recipes/chapati-a-la-ranjini">Chapathi &#xE1; la Ranjini</a></li>
+                <li><a href="/recipes/chapati-med-atta">Chapati/Paratha med Atta</a></li>
+                <li><a href="/recipes/chapatti">Chapatti</a></li>
+                <li><a href="/recipes/chicken-curry-a-la-bbc">Chicken curry &#xE1; la BBC</a></li>
+                <li><a href="/recipes/jamies-chicken-kurma">Chicken Kurma</a></li>
+                <li><a href="/recipes/dal">Dal</a></li>
+                <li><a href="/recipes/dal-med-gula-artor">Dal med gula &#xE4;rtor och r&#xF6;da linser</a></li>
+                <li><a href="/recipes/dry-chicken-curry">DRY CHICKEN CURRY RECIPE</a></li>
+                <li><a href="/recipes/dry-potato-stir-fry">Dry potato stir-fry</a></li>
+                <li><a href="/recipes/elins-sydindiska-fiskare">Elins sydindiska fiskare</a></li>
+                <li><a href="/recipes/eriks-tandoorikyckling">Eriks Tandoorikyckling</a></li>
+                <li><a href="/recipes/god-raita">God raita</a></li>
+                <li><a href="/recipes/hannas-goda-chai">Hannas goda CHAI</a></li>
+                <li><a href="/recipes/indian-salmon">Indian salmon - lax/salmon</a></li>
+                <li><a href="/recipes/indiskt-spenatklet">Indiskt spenatklet</a></li>
+                <li><a href="/recipes/lemon-pickles">Lemon Pickle from Jamie&#x27;s 30 Minute Meals</a></li>
+                <li><a href="/recipes/manjulas-naan">Manjula&#x27;s Naan</a></li>
+                <li><a href="/recipes/mixed-veg-curd-salad">Mixed vegetable curd salad</a></li>
+                <li><a href="/recipes/mixed-veg-with-chickpeas">Mixed vegetables with chickpeas</a></li>
+                <li><a href="/recipes/niladris-kyckling">Niladris kyckling</a></li>
+                <li><a href="/recipes/pakoras">Pakoras</a></li>
+                <li><a href="/recipes/potato-curry-for-chapati">Potato curry for Chapathi &#xE1; la Ranjini</a></li>
+                <li><a href="/recipes/potato-naan">Potato naan</a></li>
+                <li><a href="/recipes/potato-paratha">Potato paratha</a></li>
+                <li><a href="/recipes/puri">Puri</a></li>
+                <li><a href="/recipes/spicy-dry-fried-curry-chicken">Spicy Dry Fried Curry Chicken</a></li>
+                <li><a href="/recipes/tandoori-chicken">Tandoori chicken</a></li>
+                <li><a href="/recipes/urad-dal">URAD DAAL RECIPE</a></li>
+            <li class="header">Kaffe</li>
+                <li><a href="/recipes/aeropress">Aeropressrecept</a></li>
+            <li class="header">Meze</li>
+                <li><a href="/recipes/baba-ganoush">Baba ganoush</a></li>
+                <li><a href="/recipes/grillad-paprika-i-vinager">Grillad paprika i vin&#xE4;ger</a></li>
+                <li><a href="/recipes/kebab">Kebab</a></li>
+                <li><a href="/recipes/tabbouleh">Tabbouleh</a></li>
+                <li><a href="/recipes/tzatziki">Tzatziki</a></li>
+            <li class="header">Middag</li>
+                <li><a href="/recipes/alfredos-fettuccini">Alfredos fettuccini</a></li>
+                <li><a href="/recipes/antons-vasterbottenpaj">Antons v&#xE4;sterbottenpaj</a></li>
+                <li><a href="/recipes/confiterad-lax-med-ingefara-och-citron">Confiterad Lax med ingef&#xE4;ra och citron</a></li>
+                <li><a href="/recipes/elins-gulashhh">Elins Gulaschhh</a></li>
+                <li><a href="/recipes/elins-kyckling">Elins kyckling</a></li>
+                <li><a href="/recipes/eriks-vapianopasta">Eriks Vapiano-pasta</a></li>
+                <li><a href="/recipes/falafel-de-rue-de-rosiers">Falafel Rue de Rosiers</a></li>
+                <li><a href="/recipes/falafel-with-fava-beans">Falafel with Fava Beans and Chickpeas</a></li>
+                <li><a href="/recipes/friterade-pommes">Friterade Pommes Frites</a></li>
+                <li><a href="/recipes/grillad-kyckling-i-ugn">Grillad kyckling i ugn med &#xF6;rter och gr&#xF6;nsaker</a></li>
+                <li><a href="/recipes/hemmagjord-pasta">Hemmagjord pasta</a></li>
+                <li><a href="/recipes/honungsglacerade-revbensspjall">Honungsglaserade Revbensspj&#xE4;ll-Spareribs</a></li>
+                <li><a href="/recipes/italiensk-kottfarssas">Italiensk K&#xF6;ttf&#xE4;rss&#xE5;s</a></li>
+                <li><a href="/recipes/jamies-chili-con-carne">Jamie Olivers chili con carne</a></li>
+                <li><a href="/recipes/johannas-lasagne-med-keso">Johannas lasagne</a></li>
+                <li><a href="/recipes/chicken-gongbao">Kyckling Gongbao</a></li>
+                <li><a href="/recipes/morberg-potatisgratang">Morbergs potatisgrat&#xE4;ng</a></li>
+                <li><a href="/recipes/mustig-italiensk-kottfarssas">Mustig italiensk k&#xF6;ttf&#xE4;rss&#xE5;s</a></li>
+                <li><a href="/recipes/pulled-pork">Pulled Pork</a></li>
+                <li><a href="/recipes/rostad-farskpotatis">Rostad f&#xE4;rskpotatis med &#xF6;rtolja</a></li>
+                <li><a href="/recipes/spenatsoppa-a-la-marcus">Spenatsoppa a la Marcus</a></li>
+                <li><a href="/recipes/svamprisotto">Svamprisotto</a></li>
+                <li><a href="/recipes/tacokrydda-till-kottfars">Tacokrydda till k&#xF6;ttf&#xE4;rs</a></li>
+                <li><a href="/recipes/texas-chili">Texas chili</a></li>
+                <li><a href="/recipes/ugnsstekt-fransyska">Ugnsstekt fransyska med morot- och ingef&#xE4;rsr&#xF6;ra</a></li>
+                <li><a href="/recipes/ungersk-gulashgryta">Ungersk gulaschgryta</a></li>
+                <li><a href="/recipes/vegetarisk-lasagne">Vegetarisk lasagne</a></li>
+            <li class="header">S&#xE5;s</li>
+                <li><a href="/recipes/aioli">Aioli</a></li>
+                <li><a href="/recipes/currysas-till-chicken-nuggets">Currys&#xE5;s (till t ex Chicken nuggets)</a></li>
+                <li><a href="/recipes/eriks-tomatsas-utan-indiska-kryddor">Eriks tomats&#xE5;s utan indiska kryddor (f&#xF6;rutom chilli)</a></li>
+                <li><a href="/recipes/morot-lime-ingefarsrora">Morot, lime och ingef&#xE4;rsr&#xF6;ra</a></li>
+                <li><a href="/recipes/rodvinssas-med-balsamvinager">R&#xF6;dvinss&#xE5;s med balsamvin&#xE4;ger</a></li>
+                <li><a href="/recipes/rodvinssky-halvatta">R&#xF6;dvinssky/s&#xE5;s, halv &#xE5;tta</a></li>
+                <li><a href="/recipes/tahini-yoghurt-sauce">Tahini Yoghurt Sauce</a></li>
+                <li><a href="/recipes/varldens-godaste-tomatsas">V&#xE4;rldens godaste tomats&#xE5;s</a></li>
+            <li class="header">Tillbeh&#xF6;r</li>
+                <li><a href="/recipes/basilika-farskost">Basilikaf&#xE4;rskost</a></li>
+
+                    </ul>
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+	<section class="content-header">
+		<h1>Recipes</h1>
+	</section>
+	<section class="content">
+					<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Br&#xF6;d</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/annes-philadephiaostfyllda-hallonmuffins">Annes philadephiaostfyllda hallonmuffins</a></strong></td>
+									<td>
+muffins, fika									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/eriks-smoriga-bullar">Eriks sm&#xF6;riga bullar</a></strong></td>
+									<td>
+bullar									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/focaccia">Focaccia</a></strong></td>
+									<td>
+focaccia									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/hurtbulle">Hurtbulle</a></strong></td>
+									<td>
+bikarbonat									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/johans-frukostbrod-till-alsklingen">Johans frukostbr&#xF6;d till &#xE4;lsklingen</a></strong></td>
+									<td>
+br&#xF6;d									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/ljust-sommarbrod-med-vete">Ljust sommarbr&#xF6;d m. vete</a></strong></td>
+									<td>
+martin johansson									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/mamma-gunnels-p%C3%B6siga-sockerkaka">Mammas saftiga p&#xF6;siga sockerkaka med frukt</a></strong></td>
+									<td>
+fika, sockerkaka									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/martins-en-bra-bulle">Martins En bra bulle</a></strong></td>
+									<td>
+martin johansson, bullar									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/pain-de-martins-pizzadeg">Pain de Martins pizzadeg (tar ca 4 h)</a></strong></td>
+									<td>
+pizza, martin johansson									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/pizzadeg">Pizzadeg</a></strong></td>
+									<td>
+pizza									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/restaurangakademiens-brod">Restaurangakademiensbr&#xF6;d</a></strong></td>
+									<td>
+hedh, manitoba cream									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/enkla-ljusa-brodet">Vila och vika Enkla ljusa br&#xF6;det</a></strong></td>
+									<td>
+martin johansson									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Dessert</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/kladdkaka">Kladdkaka</a></strong></td>
+									<td>
+kakao									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/knackig-rabarberpaj">Kn&#xE4;ckig rabarberpaj (eller n&#xE5;t b&#xE4;r)</a></strong></td>
+									<td>
+paj, rabarber, kn&#xE4;ckig									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/leilas-sega-kladdkaka">Leilas sega kladdkaka</a></strong></td>
+									<td>
+leila lindholm, fika									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/mamma-gunnels-tartbotten">Mamma Gunnels t&#xE5;rtbotten</a></strong></td>
+									<td>
+br&#xF6;d, t&#xE5;rta, sockerkaka									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/mormor-gunvors-succet%C3%A5rta">Mormors Gunvors succ&#xE9;t&#xE5;rta</a></strong></td>
+									<td>
+mormor, t&#xE5;rta									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/rarorda-bar">R&#xE5;r&#xF6;rda b&#xE4;r</a></strong></td>
+									<td>
+b&#xE4;r, r&#xE5;r&#xF6;rda									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/leilas-sega-maranger">Sega mar&#xE4;nger &#xE0; la Leila Lindholm</a></strong></td>
+									<td>
+mar&#xE4;nger, leila lindholm, &#xE4;ggvita									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/vit-chokladmousse">Vit chokladmousse m marinerade hjortron</a></strong></td>
+									<td>
+choklad, hjortron									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/vit-chokladpanacotta-med-bar">Vit chokladpannacotta med limemarinerade b&#xE4;r</a></strong></td>
+									<td>
+pannacotta, lime, b&#xE4;r									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Frukost</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/american-pancaces">American pancakes</a></strong></td>
+									<td>
+pannkaka, bakpulver									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/gunlogs-musli-fran-facebook">Gunl&#xF6;gs m&#xFC;sli fr&#xE5;n Facebook</a></strong></td>
+									<td>
+m&#xFC;sli									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Godis</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/knack">Kn&#xE4;ck</a></strong></td>
+									<td>
+julgodis									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Indiskt</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/aloo-masala-for-dosai">Aloo (Potato) Masala for Dosa</a></strong></td>
+									<td>
+potatis, masala, dosa									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/anjums-green-coconut-fish-curry">Anjum&#x27;s green coconut fish curry</a></strong></td>
+									<td>
+anjum, coconut, curry, fish									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/rogan-josh">Atul Kochhar&#x27;s Rogan Josh</a></strong></td>
+									<td>
+lamm									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/chai">Chai</a></strong></td>
+									<td>
+chai, fika									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/chapati-a-la-ranjini">Chapathi &#xE1; la Ranjini</a></strong></td>
+									<td>
+chapati, br&#xF6;d									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/chapati-med-atta">Chapati/Paratha med Atta</a></strong></td>
+									<td>
+chapati, paratha									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/chapatti">Chapatti</a></strong></td>
+									<td>
+br&#xF6;d, chapatti									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/chicken-curry-a-la-bbc">Chicken curry &#xE1; la BBC</a></strong></td>
+									<td>
+kyckling, curry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/jamies-chicken-kurma">Chicken Kurma</a></strong></td>
+									<td>
+jamie oliver, kyckling, kurma									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/dal">Dal</a></strong></td>
+									<td>
+linser									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/dal-med-gula-artor">Dal med gula &#xE4;rtor och r&#xF6;da linser</a></strong></td>
+									<td>
+dal, linser									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/dry-chicken-curry">DRY CHICKEN CURRY RECIPE</a></strong></td>
+									<td>
+kyckling, dry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/dry-potato-stir-fry">Dry potato stir-fry</a></strong></td>
+									<td>
+dry, potatis									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/elins-sydindiska-fiskare">Elins sydindiska fiskare</a></strong></td>
+									<td>
+str&#xF6;mming, fisk, dry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/eriks-tandoorikyckling">Eriks Tandoorikyckling</a></strong></td>
+									<td>
+tandoori, kyckling									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/god-raita">God raita</a></strong></td>
+									<td>
+raita, yoghurt									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/hannas-goda-chai">Hannas goda CHAI</a></strong></td>
+									<td>
+fika, chai									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/indian-salmon">Indian salmon - lax/salmon</a></strong></td>
+									<td>
+lax, fisk, dry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/indiskt-spenatklet">Indiskt spenatklet</a></strong></td>
+									<td>
+spenat, curry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/lemon-pickles">Lemon Pickle from Jamie&#x27;s 30 Minute Meals</a></strong></td>
+									<td>
+pickles, side-dish, jamie oliver									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/manjulas-naan">Manjula&#x27;s Naan</a></strong></td>
+									<td>
+naan, manjula, br&#xF6;d									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/mixed-veg-curd-salad">Mixed vegetable curd salad</a></strong></td>
+									<td>
+curd, yoghurt, sallad									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/mixed-veg-with-chickpeas">Mixed vegetables with chickpeas</a></strong></td>
+									<td>
+veg									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/niladris-kyckling">Niladris kyckling</a></strong></td>
+									<td>
+kyckling, curry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/pakoras">Pakoras</a></strong></td>
+									<td>
+pakoras, br&#xF6;d, friterat									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/potato-curry-for-chapati">Potato curry for Chapathi &#xE1; la Ranjini</a></strong></td>
+									<td>
+potatis, curry, chapati									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/potato-naan">Potato naan</a></strong></td>
+									<td>
+naan, br&#xF6;d, potatis									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/potato-paratha">Potato paratha</a></strong></td>
+									<td>
+potatis, paratha, br&#xF6;d									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/puri">Puri</a></strong></td>
+									<td>
+puri, br&#xF6;d									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/spicy-dry-fried-curry-chicken">Spicy Dry Fried Curry Chicken</a></strong></td>
+									<td>
+kyckling, dry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/tandoori-chicken">Tandoori chicken</a></strong></td>
+									<td>
+kyckling, tandoori									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/urad-dal">URAD DAAL RECIPE</a></strong></td>
+									<td>
+dal, urad									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Kaffe</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/aeropress">Aeropressrecept</a></strong></td>
+									<td>
+fika, kaffe, metod									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Meze</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/baba-ganoush">Baba ganoush</a></strong></td>
+									<td>
+meze, aubergine									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/grillad-paprika-i-vinager">Grillad paprika i vin&#xE4;ger</a></strong></td>
+									<td>
+meze, paprika									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/kebab">Kebab</a></strong></td>
+									<td>
+meze, lammf&#xE4;rs, n&#xF6;tf&#xE4;rs									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/tabbouleh">Tabbouleh</a></strong></td>
+									<td>
+meze, bulgur									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/tzatziki">Tzatziki</a></strong></td>
+									<td>
+yoghurt, meze									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Middag</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/alfredos-fettuccini">Alfredos fettuccini</a></strong></td>
+									<td>
+pasta, sm&#xF6;r, parmesan									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/antons-vasterbottenpaj">Antons v&#xE4;sterbottenpaj</a></strong></td>
+									<td>
+paj, v&#xE4;sterbottenost									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/confiterad-lax-med-ingefara-och-citron">Confiterad Lax med ingef&#xE4;ra och citron</a></strong></td>
+									<td>
+lax, fisk									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/elins-gulashhh">Elins Gulaschhh</a></strong></td>
+									<td>
+gulash, gryta									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/elins-kyckling">Elins kyckling</a></strong></td>
+									<td>
+kyckling, sambal									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/eriks-vapianopasta">Eriks Vapiano-pasta</a></strong></td>
+									<td>
+pasta, vapiano, salami									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/falafel-de-rue-de-rosiers">Falafel Rue de Rosiers</a></strong></td>
+									<td>
+falafel, s&#xE5;s, pitabr&#xF6;d									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/falafel-with-fava-beans">Falafel with Fava Beans and Chickpeas</a></strong></td>
+									<td>
+falafel									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/friterade-pommes">Friterade Pommes Frites</a></strong></td>
+									<td>
+friterat, potatis									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/grillad-kyckling-i-ugn">Grillad kyckling i ugn med &#xF6;rter och gr&#xF6;nsaker</a></strong></td>
+									<td>
+kyckling, fetaost, s&#xE5;s, gr&#xF6;nsaker, meny									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/hemmagjord-pasta">Hemmagjord pasta</a></strong></td>
+									<td>
+pasta									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/honungsglacerade-revbensspjall">Honungsglaserade Revbensspj&#xE4;ll-Spareribs</a></strong></td>
+									<td>
+revbensspj&#xE4;ll, k&#xF6;tt									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/italiensk-kottfarssas">Italiensk K&#xF6;ttf&#xE4;rss&#xE5;s</a></strong></td>
+									<td>
+k&#xF6;ttf&#xE4;rs									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/jamies-chili-con-carne">Jamie Olivers chili con carne</a></strong></td>
+									<td>
+jamie oliver, chili, n&#xF6;tf&#xE4;rs									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/johannas-lasagne-med-keso">Johannas lasagne</a></strong></td>
+									<td>
+lasagne, pasta, keso									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/chicken-gongbao">Kyckling Gongbao</a></strong></td>
+									<td>
+kyckling, kinesiskt, soja									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/morberg-potatisgratang">Morbergs potatisgrat&#xE4;ng</a></strong></td>
+									<td>
+potatis, morberg									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/mustig-italiensk-kottfarssas">Mustig italiensk k&#xF6;ttf&#xE4;rss&#xE5;s</a></strong></td>
+									<td>
+k&#xF6;ttf&#xE4;rs									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/pulled-pork">Pulled Pork</a></strong></td>
+									<td>
+fl&#xE4;skkarr&#xE9;									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/rostad-farskpotatis">Rostad f&#xE4;rskpotatis med &#xF6;rtolja</a></strong></td>
+									<td>
+potatis, olja									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/spenatsoppa-a-la-marcus">Spenatsoppa a la Marcus</a></strong></td>
+									<td>
+soppa, spenat, r&#xE4;kor									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/svamprisotto">Svamprisotto</a></strong></td>
+									<td>
+risotto, svamp									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/tacokrydda-till-kottfars">Tacokrydda till k&#xF6;ttf&#xE4;rs</a></strong></td>
+									<td>
+k&#xF6;ttf&#xE4;rs, tacos									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/texas-chili">Texas chili</a></strong></td>
+									<td>
+chili, k&#xF6;tt									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/ugnsstekt-fransyska">Ugnsstekt fransyska med morot- och ingef&#xE4;rsr&#xF6;ra</a></strong></td>
+									<td>
+fransyska, k&#xF6;tt									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/ungersk-gulashgryta">Ungersk gulaschgryta</a></strong></td>
+									<td>
+gulash, h&#xF6;grev, gryta									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/vegetarisk-lasagne">Vegetarisk lasagne</a></strong></td>
+									<td>
+veg, pasta									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">S&#xE5;s</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/aioli">Aioli</a></strong></td>
+									<td>
+aioli, &#xE4;ggulor									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/currysas-till-chicken-nuggets">Currys&#xE5;s (till t ex Chicken nuggets)</a></strong></td>
+									<td>
+chicken nuggets, curry									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/eriks-tomatsas-utan-indiska-kryddor">Eriks tomats&#xE5;s utan indiska kryddor (f&#xF6;rutom chilli)</a></strong></td>
+									<td>
+tomat									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/morot-lime-ingefarsrora">Morot, lime och ingef&#xE4;rsr&#xF6;ra</a></strong></td>
+									<td>
+yoghurt									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/rodvinssas-med-balsamvinager">R&#xF6;dvinss&#xE5;s med balsamvin&#xE4;ger</a></strong></td>
+									<td>
+r&#xF6;dvin, balsamvin&#xE4;ger									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/rodvinssky-halvatta">R&#xF6;dvinssky/s&#xE5;s, halv &#xE5;tta</a></strong></td>
+									<td>
+r&#xF6;dvin, halv &#xE5;tta hos mig									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/tahini-yoghurt-sauce">Tahini Yoghurt Sauce</a></strong></td>
+									<td>
+s&#xE5;s, tahini, yoghurt, falafel									</td>
+								</tr>
+								<tr>
+									<td><strong><a href="/recipes/varldens-godaste-tomatsas">V&#xE4;rldens godaste tomats&#xE5;s</a></strong></td>
+									<td>
+tomat, pasta									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+			<div class="box">
+				<div class="box-body no-padding">
+					<table class="table table-striped table-hover two-cols-alt table-responsive">
+							<thead>
+								<tr class="active"><th colspan="2">Tillbeh&#xF6;r</th></tr>
+							</thead>
+						
+						<tbody>
+								<tr>
+									<td><strong><a href="/recipes/basilika-farskost">Basilikaf&#xE4;rskost</a></strong></td>
+									<td>
+ost, basilika, f&#xE4;rskost									</td>
+								</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div> 
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="http://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+
+            // Called after Turbolinks page load
+            document.addEventListener("turbolinks:load", function() {       
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        htmlLabels: false,
+                        useMaxWidth:false
+                    }
+                });  
+                mermaid.init(undefined, ".mermaid")
+                $('svg').addClass('img-responsive');
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+                
+                $.AdminLTE.layout.activate();                
+                $("body").removeClass("hold-transition");
+
+                // This reinits all the Bootstrap JS
+                $(window).trigger('load');
+            });
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    </body>
+</html>
