@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" content="@Context.String(DocsKeys.Description)" />
+        <meta name="description" />
         <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://cederlof.github.io/recipes/"/>
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-        <title>@Context.String(DocsKeys.Title, "Docs") - @ViewData[Keys.Title]</title>
+        <title>Recept - Home</title>
         <link href="assets/css/mermaid.css" rel="stylesheet">
         <link href="assets/css/highlight.css" rel="stylesheet">
         <link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -31,18 +31,11 @@
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        @Html.Partial("_Head")
+        
     </head>
-    @{
-        string layoutTopNav = Model.Get<bool>(DocsKeys.NoSidebar, false) ? "layout-top-nav" : string.Empty;
-        string noGutter = Model.Get<bool>(DocsKeys.NoGutter, false) ? "no-gutter" : string.Empty;
-    }
-    <body class="hold-transition wyam layout-boxed @layoutTopNav @noGutter">    
+    <body class="hold-transition wyam layout-boxed layout-top-nav ">    
         <div class="top-banner"></div>
-        @{
-            string withContainer = Model.Get<bool>(DocsKeys.NoContainer, false) ? null : "with-container";
-        }
-        <div class="wrapper @withContainer">
+        <div class="wrapper with-container">
             <!-- Header -->
             <header class="main-header">   
                      
@@ -55,13 +48,6 @@
                          
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
-                    @if(!Model.Get<bool>("NoSidebar", false))
-                    {
-                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
-                            <span class="sr-only">Toggle side menu</span>
-                            <i class="fa fa-chevron-circle-right"></i>
-                        </a>
-                    }
                                         
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -73,67 +59,62 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                            @Html.Partial("_Navbar") 
+                                    <li><a href="/recipes">Recipes</a></li>
+ 
                         </ul>       
                     </div>
                     <!-- /.navbar-collapse -->
                 
                     <!-- Navbar Right Menu -->
-                    @*
-                    <div class="navbar-custom-menu">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">A Menu Item</a></li>
-                            <li><a href="#">Another Item</a></li>
-                            
-                            <!-- Control Sidebar Toggle Button -->
-                            <li>
-                                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    *@
                 </nav>
             </header>
             
             <!-- Left side column. contains the logo and sidebar -->
-            <aside class="main-sidebar @(Model.Get<bool>("NoSidebar", false) ? "hidden" : string.Empty)">
+            <aside class="main-sidebar hidden">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
-                    @RenderSection("Infobar", false)
+                    	
+    <div id="infobar-headings"></div>
+
                 </section>
                 <section class="sidebar">                    
-                    @RenderSection("Search", false)
+                    
+
                     <ul class="sidebar-menu">
-                        @RenderSection("Sidebar", false)
+                        
+
                     </ul>
                 </section>                
             </aside>
             
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                @RenderBody()                
+                
+
+
+
+	<section class="content-header">
+		<h1>Home</h1>
+	</section>
+	<section class="content">
+		<h1>Welcome!</h1>
+
+<p>You can explore the documentation by selecting sections from the navigation bar above.</p>
+	</section>
+                
             </div>           
             
             <!-- Footer -->
             <footer class="main-footer">
             </footer>
             
-            @*
-            <!-- Control Sidebar -->
-            <aside class="control-sidebar control-sidebar-dark">
-                
-            </aside>
-            <!-- Add the sidebar's background. This div must be placed
-                immediately after the control sidebar -->
-            <div class="control-sidebar-bg"></div>
-            *@
         </div>
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
-                @Html.Partial("_Footer")
+                Generated by <a href="http://wyam.io">Wyam</a>
             </footer>
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-        @Html.Partial("_Bottom")
+        
         <script>
             // Close the sidebar if we select an anchor link
             $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
