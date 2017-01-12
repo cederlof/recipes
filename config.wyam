@@ -1,2 +1,5 @@
+Settings.Host = "recept.cederlof.net";
 GlobalMetadata["Title"] = "Recept";
 GlobalMetadata["SearchIndex"] = true;
+GlobalMetadata["Description"] = "";
+GlobalMetadata["Intro"] = "";
