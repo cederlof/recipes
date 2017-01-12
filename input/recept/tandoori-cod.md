@@ -7,19 +7,22 @@ Published: 2017-01-12
 Spicy Baked Fish (Tandoori Cod)
 
 Servings: Serves 4 when served with rice Time: 30 minutes Difficulty: EasyPrint
+
+
 Ingredients:
 
 About 2 lb of Cod fillets, about two pieces approximately 10 inches long and 2 inches wide
+
 For the marinade:
 
-3/4 tsp of salt
-3/4 tsp red chilli powder
-1/4 tsp turmeric powder
-1 tsp tandoori masala
-1/4 tsp cumin powder
-1 tbsp ginger garlic paste*
-1 tbsp olive oil
-lime wedges,fresh cilantro and onion slices for garnish
+* 3/4 tsp of salt
+* 3/4 tsp red chilli powder
+* 1/4 tsp turmeric powder
+* 1 tsp tandoori masala
+* 1/4 tsp cumin powder
+* 1 tbsp ginger garlic paste*
+* 1 tbsp olive oil
+* lime wedges,fresh cilantro and onion slices for garnish
 
 Method:
 
