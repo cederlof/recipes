@@ -11,12 +11,14 @@ function calculateIngredients(){
 
 function addInputForCalculation(){
     var label = $("<label/>")
+        .css("float", "right")
         .text("Förändringsfaktor: ");
 
     var input = $("<input/>")
         .attr("id", "percentageInput")
         .attr("type", "text")
-        .css("width", "50px")
+        .css("width", "30px")
+        .css("text-align", "right")
         .val("1")
         .appendTo(label)
         .keyup(percentageInputChange)
@@ -56,6 +58,7 @@ function makeTableFromIngredients(){
     if(list.length > 0){
         var table = $("<table/>")
             .addClass("table")
+            .addClass("table-condensed")
             .addClass("ingredients-calculator-table")
             .attr("border", 1);
         $(list).find("li").each(function(index,value){
@@ -63,8 +66,13 @@ function makeTableFromIngredients(){
             var parsedIngredient = parseIngredient(text);
 
             var tableRow = $("<tr/>").appendTo(table);
-            var amountCell = $("<td/>").appendTo(tableRow);
-            var unitCell = $("<td/>").appendTo(tableRow);
+            var amountCell = $("<td/>")
+                .css("width", "50px")
+                .css("text-align", "right")
+                .appendTo(tableRow);
+            var unitCell = $("<td/>")
+                .css("width", "50px")
+                .appendTo(tableRow);
             var ingredientCell = $("<td/>").appendTo(tableRow);
 
             if(parsedIngredient != null){
