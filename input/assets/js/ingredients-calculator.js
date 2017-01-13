@@ -2,9 +2,8 @@ calculateIngredients();
 
 function calculateIngredients(){
     if($("section.content ul").length > 0){
-        $("section.content ul").prepend(
-            $("<div/>").attr("id", "output-container")
-        );
+        $("<div/>").attr("id", "output-container")
+            .insertBefore($("section.content ul").first());
         addInputForCalculation();
         makeTableFromIngredients();
     }
