@@ -1,10 +1,15 @@
-
 calculateIngredients();
 
 function calculateIngredients(){
-    addInputForCalculation();
-    makeTableFromIngredients();
+    if($("section.content ul").length > 0){
+        $("section.content ul").prepend(
+            $("<div/>").attr("id", "output-container")
+        );
+        addInputForCalculation();
+        makeTableFromIngredients();
+    }
 }
+
 function addInputForCalculation(){
     var label = $("<label/>")
         .text("Förändringsfaktor: ");
@@ -20,10 +25,10 @@ function addInputForCalculation(){
             if($("#percentageInput").val().length == 0)
                 $("#percentageInput").val(1);
         });
-
     
     $("#output-container").append(label);
 }
+
 function percentageInputChange(evt){
     var input = $("#percentageInput");
 
@@ -44,11 +49,8 @@ function percentageInputChange(evt){
 
         cell.text(newVal);
     });
-
-
-
-    //console.log(input.val());
 }
+
 function makeTableFromIngredients(){
     var list = $("section.content ul");
 
@@ -58,7 +60,6 @@ function makeTableFromIngredients(){
             .addClass("ingredients-calculator-table")
             .attr("border", 1);
         $(list).find("li").each(function(index,value){
-            //console.log($(value).text());
             var text = $(value).text();
             var parsedIngredient = parseIngredient(text);
 
@@ -82,6 +83,7 @@ function makeTableFromIngredients(){
         $("#output-container").append(table);
     }
 }
+
 function parseIngredient(text){
     var amount = 0;
     var unit = "";
@@ -106,7 +108,6 @@ function parseIngredient(text){
             if(typeSplitOnSpaces.length == 1)
                 ingredient = typeSplitOnSpaces[0];
         }
-
         return {amount: amount, unit: unit, ingredient: ingredient, original: text};
     }    
     else 
