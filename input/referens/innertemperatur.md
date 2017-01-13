@@ -3,7 +3,7 @@ Title: Innertemperatur
 
 ### Innertemperatur
 
-Kött | Innertemperatur
+ | Innertemperatur
 -----------|---------
 **Nötkött** | 
 Biff	| 55-70˚C	

@@ -3,7 +3,7 @@ Category: Kaffe
 Description: fika, kaffe, metod
 ---
 
-###Aeropress - dubbel espresso
+### Aeropress - dubbel espresso
 (2 skopor = 24 gram)
 
 1. Sätt i filter
@@ -16,7 +16,7 @@ Description: fika, kaffe, metod
 * Klart!
 
 
-###Aeropress - inverted
+### Aeropress - inverted
 (1 skopa = 12 gram)
 
 * 16 grams of coffee    

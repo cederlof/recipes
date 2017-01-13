@@ -4,7 +4,7 @@ Description: chapati, paratha
 ---
 *9 stycken*
 
-####Ingredients
+#### Ingredients
  
 * Whole Wheat Flour - 1½ cups (3.5 dl)
 * Oil - 3 tsp
@@ -15,7 +15,7 @@ Description: chapati, paratha
  
 Gör dem inte för tunna!
 
-####Method
+#### Method
 
 In a large bowl, mix the flour and salt well.
 Add oil and mix again to incorporate the oil into the flour.

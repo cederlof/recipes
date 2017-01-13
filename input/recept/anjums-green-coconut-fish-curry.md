@@ -3,7 +3,7 @@ Category: Indiskt
 Description: anjum, coconut, curry, fish
 ---
 
-####Ingredients
+#### Ingredients
 
 * 2 tbsp vegetable oil
 * ½ tsp brown mustard seeds
@@ -23,12 +23,12 @@ Description: anjum, coconut, curry, fish
 * ¾ tsp garam masala
 * 500g/1lb 2oz salmon or firm white fish fillets, cut into large pieces
 
-#####To serve
+##### To serve
 
 * 2-3 tsp lemon juice
 * 50g/2oz fresh coriander leaves and stalks, chopped
 
-####Preparation method
+#### Preparation method
 
 1. Heat the oil in a non-stick pan, add the mustard seeds, cloves, cardamom pods and cinnamon stick and stir fry for 20 seconds (be careful, the seeds might pop). Add half of the chopped onion and fry for 4-5 minutes until soft.
 
