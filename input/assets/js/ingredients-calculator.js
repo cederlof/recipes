@@ -44,12 +44,17 @@ function percentageInputChange(evt){
             newVal = val;
         else if(!isNaN(val)){
             newVal = val * precentageVal;
+            newVal = roundToTwo(newVal);
         }else{
             newVal = "-";
         }
 
         cell.text(newVal);
     });
+}
+
+function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
 }
 
 function makeTableFromIngredients(){
@@ -102,6 +107,14 @@ function parseIngredient(text){
     {
         var amount = match[0];
         var amountLength = amount.length;
+
+        //if fraction
+        if(amount.length > 2 && amount.indexOf("/") > 0){
+            amountSplit = amount.split("/");
+            amount = amountSplit[0] / amountSplit[1];
+            amount = roundToTwo(amount);
+        }
+
         var remainingString = text.substring(amountLength).trim();
         var typeSplitOnSpaces = remainingString.split(" ");
 
