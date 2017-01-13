@@ -80,6 +80,7 @@ function makeTableFromIngredients(){
                 .appendTo(tableRow)
                 .append(parsedIngredient.original);
         });
+        $(list).remove();
         $("#output-container").append(table);
     }
 }
