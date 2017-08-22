@@ -12,6 +12,6 @@ Vattentemp. 94 grader (stopp precis innan det börjar koka eller låt vattnet ko
 7 gram kaffe / dl vatten
 60 gram kaffe / liter vatten
 
-1 kopp = 1,2dl vatten
+1 kopp = 1,2dl - 1,5 dl vatten
 
 Dragtid 4 minuter
