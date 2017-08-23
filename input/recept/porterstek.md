@@ -1,5 +1,5 @@
 Title: Syndigt god porterstek
-Category: Dessert
+Category: Middag
 Description: fransyska, rostbiff, innanlår, vilt, nöt, porter, nyår, festmat
 ---
 
