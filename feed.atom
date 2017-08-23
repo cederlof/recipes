@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<link rel="self" href="http://recept.cederlof.net/" />
+	<id>http://recept.cederlof.net/</id>
+	<title>Recept</title>
+	<rights>2017</rights>
+	<updated>2017-08-23T18:45:57Z</updated>
+</feed>
