@@ -1,7 +1,7 @@
 Title: Sous vide tid/temperatur
 ---
 
-##Cold brew coffee
+# Cold brew coffee
 
 65 grader
 2 timmar
@@ -11,7 +11,7 @@ Title: Sous vide tid/temperatur
 
 Fördela på två burkar så det når ända upp till locket. Sänk ner hela burken med lock under vattenytan.
 
-##Gunnars ägg
+# Gunnars ägg
 
 Temp|Tid|Resultat
 ----|---|-----------
@@ -20,6 +20,6 @@ Temp|Tid|Resultat
 75|19 min|Härlig gula och lite lös vita.
 85|16 min|Helt vanliga hårdkokta ägg.
 
-##Gunnars högrev
+# Gunnars högrev
 
 Tjocka biffar. 55 grader i 48 timmar.
