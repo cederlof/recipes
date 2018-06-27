@@ -30,6 +30,8 @@ on_success:
   - git config --global user.email "erik@pambu.com"
   - git config --global user.name "Erik Cederlöf"
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git fetch --all
+  - git reset --hard origin/gh-pages
   - git checkout gh-pages
   - git rm -rf .
   - xcopy ..\output . /E
